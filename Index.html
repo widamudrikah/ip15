@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="Bootstrap/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>iPhone 16 Pro</title>
+</head>
+<body>    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iPhone 16 Pro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Apple</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Other Products</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" type="button">Login</button>
+                    <button class="btn btn-light" type="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <div class="heroo">
+        <div class="container img-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <video autoplay muted loop playsinline class="w-100">
+                        <source src="assets/Animation Hero Iphone.mp4" type="video/mp4">
+                    </video>
+                    <div class="btn btn-buy">Buy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelector('.btn-buy').addEventListener('click', function() {
+            window.location.href = 'https://www.example.com/buy'; // Replace with your desired URL
+        });
+    </script>
+    
+    <!-- Video Slide Section -->
+    <section class="video-slide-section py-5" style="background-color: #000;">
+        <div>
+            <h2 class="lihat-sorotan">Lihat Sorotan</h2>
+            <div class="tonton-link">
+                <a href="https://youtu.be/xqyUdNxWazA" class="btn-tonton">Tonton video <span>→</span></a>
+                <a href="https://www.apple.com/id/apple-events/" class="btn-tonton">Tonton acara <span>→</span></a>
+            </div>
+        </div>
+        <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 600px;">
+                        <video autoplay muted loop playsinline class="w-100">
+                            <source src="assets/video1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 600px;">
+                        <video autoplay muted loop playsinline class="w-100">
+                            <source src="assets/video2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 600px;">
+                        <video autoplay muted loop playsinline class="w-100">
+                            <source src="assets/video3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <!-- iPhone Color Selector -->
+    <section class="iphone-color-selector py-5" style="background-color: #000;">
+        <div class="text-left">
+            <h1><strong>Lihat lebih dekat.</strong></h1>
+            <p class="iphone-description">Jelajahi variasi warna iPhone terbaru. Klik salah satu warna di bawah untuk melihat lebih detail.</p>
+        </div>
+        <div class="iphone-preview">
+            <img id="iphoneImage" src="assets/Titanium-putih.png" alt="iPhone" class="img-fluid active">
+        </div>
+        <div class="color-options">
+            <button class="color-btn" data-image="assets/Titanium-hitam.png" style="background-color: #1c1c1e;" aria-label="Hitam"></button>
+            <button class="color-btn" data-image="assets/Titanium-putih.png" style="background-color: #e0e0e0;" aria-label="Putih"></button>
+            <button class="color-btn" data-image="assets/Titanium-navy.png" style="background-color: #1e2a3a;" aria-label="Navy"></button>
+            <button class="color-btn" data-image="assets/Titanium-real.png" style="background-color: #d2c6ba;" aria-label="Real"></button>
+        </div>
+    </section>
+    
+      <!-- Chip Section -->
+      <section class="chip-section">
+        <div class="container">
+            <img src="assets/A17-pro.png" alt="A17 Pro Chip" class="img-fluid mb-4">
+            <h2>Chip A17 Pro.<br>Jawara dalam bermain game.</h2>
+            <p>Telah hadir. Desain ulang terbesar sepanjang sejarah GPU Apple.</p>
+
+            <div class="mockup-container">
+                <img src="assets/iphone-mockup.png" alt="iPhone Mockup" class="mockup-image">
+                <video autoplay muted loop playsinline class="video-on-mockup">
+                    <source src="assets/iphone-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="flex-row">
+                <div class="flex-column text-left">
+                    <p><strong>A17 Pro merupakan chip iPhone kelas baru yang menghadirkan performa grafis terbaik sejauh ini.</strong></p>
+                    <p>Game sekelas akan terlihat dan terasa begitu imersif, dengan detail lingkungan yang luar biasa dan karakter yang begitu realistis. Dan dengan kecepatan dan efisiensi terdepan di industri, A17 Pro merespons dan bekerja cepat.</p>
+                </div>
+                <div class="flex-column text-right">
+                    <h3><strong>GPU baru sekelas Pro</strong></h3>
+                    <p>dengan 6 core</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camera Section -->
+    <section class="camera-section">
+        <h1>Kamera yang mengabadikan imajinasi Anda yang luar biasa.</h1>
+        <p>Mulai dari fleksibilitas frame yang dramatis hingga potret generasi berikutnya, lihat yang bisa Anda lakukan dengan sistem kamera iPhone tercanggih kami.</p>
+        <img src="assets/taesancihuy.jpg" alt="iPhone Camera" class="camera-image">
+    </section>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="assets/zoom1.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+            <img src="assets/zoom2.png" alt="Slide 2">
+        </div>
+        <div class="slide">
+            <img src="assets/zoom3.png" alt="Slide 3">
+        </div>
+        <div class="slide">
+            <img src="assets/zoom4.png" alt="Slide 4">
+        </div>
+        <div class="slide">
+            <img src="assets/zoom5.png" alt="Slide 5">
+        </div>
+        <div class="slide">
+            <img src="assets/zoom6.png" alt="Slide 6">
+        </div>
+        <div class="arrows">
+            <div class="arrow left">❮</div>
+            <div class="arrow right">❯</div>
+        </div>
+    </div>
+
+
+    <section class="file-transfer-section py-5">
+        <div class="text-content">
+            <h1><strong>Transfer file ukuran giga dengan kecepatan giga.</strong></h1>
+            <p class="highlight-text">Transfer file hingga <span>20x lebih cepat</span></p>
+        </div>
+        <div class="image-content">
+            <img src="assets/transferfile.png" alt="Transfer File Image">
+        </div>
+        <div class="two-column-text">
+            <div class="column">
+                <p><strong>iPhone 15 Pro merupakan iPhone pertama yang mendukung USB 3, untuk lompatan besar dalam kecepatan transfer data dan pekerjaan level profesional yang lebih cepat daripada sebelumnya.</strong></p>
+            </div>
+            <div class="column">
+                <p><strong>Dengan Wi-Fi 6E baru, kecepatan nirkabel dua kali lebih tinggi. Jadi, Anda bisa mengunggah, mengunduh, dan mentransfer file dalam sekejap.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battery -->
+    <div class="container">
+        <div class="battery">
+            <div class="battery-level"></div>
+        </div>
+    </div>
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+        <section class="emergency-section">
+            <div class="text-container">
+                <h1 class="emergency-text">Dalam keadaan darurat, <br> iPhone siap siaga.</h1>
+            </div>
+            <div class="image-container">
+                <img src="assets/ambulance.png" alt="Crash scene" class="emergency-image">
+            </div>
+            <div class="button-container">
+                <button class="learn-more-btn">Pelajari cara kerjanya</button>
+            </div>
+            <div class="procedure-box hidden">
+                <h2>Prosedur Deteksi Tabrakan:</h2>
+                <p>1. Sensor mendeteksi tabrakan berat.<br>2. iPhone memberi peringatan suara.<br>3. Jika tidak ada respons, panggilan darurat dilakukan.</p>
+            </div>
+        </section>
+
+        <section class="accordion-section">
+    <h1>Pasangan sempurna.</h1>
+    <div class="accordion-container">
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h2>iPhone dan Apple Watch</h2>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>
+                    Dengan iPhone dan Apple Watch, Anda dapat melacak aktivitas Anda, menerima notifikasi, dan lebih dari itu. Sinkronisasi yang sempurna membantu Anda tetap produktif sepanjang hari.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h2>iPhone dan Mac</h2>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>
+                    Anda juga bisa menjawab panggilan atau pesan dari iPhone langsung pada Mac. Salin gambar, video, atau teks dari iPhone, lalu tempelkan ke aplikasi lain di Mac yang berdekatan. Dan dengan iCloud, Anda bisa mengakses file favorit Anda dari iPhone atau Mac.
+                </p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <div class="accordion-header">
+                <h2>iPhone dan AirPods</h2>
+                <span class="accordion-toggle">+</span>
+            </div>
+            <div class="accordion-content">
+                <p>
+                    Pasangkan iPhone Anda dengan AirPods untuk mendengarkan musik, podcast, dan lainnya tanpa kabel. Pengalaman audio yang lancar di seluruh perangkat Apple.
+                </p>
+            </div>
+            <img src="" alt="">
+        </div>
+    </div>
+</section>
+<!-- end accordion -->
+
+<footer class="apple-footer">
+    <div class="footer-section">
+        <div class="footer-column">
+            <h4>Belanja dan Belajar</h4>
+            <ul>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">AirPods</a></li>
+                <li><a href="#">TV & Rumah</a></li>
+                <li><a href="#">AirTag</a></li>
+            </ul>
+            <h4>Dompet Apple</h4>
+            <ul>
+                <li><a href="#">Dompet</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Akun</h4>
+            <ul>
+                <li><a href="#">Kelola ID Apple Anda</a></li>
+                <li><a href="#">iCloud.com</a></li>
+            </ul>
+            <h4>Hiburan</h4>
+            <ul>
+                <li><a href="#">Apple One</a></li>
+                <li><a href="#">Apple TV+</a></li>
+                <li><a href="#">Apple Music</a></li>
+                <li><a href="#">Apple Arcade</a></li>
+                <li><a href="#">Apple Fitness+</a></li>
+                <li><a href="#">Apple Podcasts</a></li>
+                <li><a href="#">Apple Books</a></li>
+                <li><a href="#">App Store</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Untuk Bisnis</h4>
+            <ul>
+                <li><a href="#">Apple dan Bisnis</a></li>
+            </ul>
+            <h4>Untuk Pendidikan</h4>
+            <ul>
+                <li><a href="#">Apple dan Pendidikan</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Nilai-nilai Apple</h4>
+            <ul>
+                <li><a href="#">Aksesibilitas</a></li>
+                <li><a href="#">Pendidikan</a></li>
+                <li><a href="#">Lingkungan</a></li>
+                <li><a href="#">Privasi</a></li>
+                <li><a href="#">Rantai Pasokan</a></li>
+            </ul>
+            <h4>Tentang Apple</h4>
+            <ul>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">Kepemimpinan Apple</a></li>
+                <li><a href="#">Investor</a></li>
+                <li><a href="#">Etika & Kepatuhan</a></li>
+                <li><a href="#">Acara</a></li>
+                <li><a href="#">Hubungi Apple</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="footer-link">
+        <a href="#">Temukan retailer di dekat Anda.</a>
+    </div>
+</footer>
+
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <script src="colorSelector.js"></script>
+    <script src="transferfile.js"></script>
+    <script src="battery.js"></script>
+    <script src="accordion.js"></script>
+
+  
+</body>
+</html>

@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6A6A6A;
+}
+
+.custome-navbar {
+  background-color: #3B5D50;
+}
+.custome-navbar .navbar-brand {
+  font-size: 32px;
+  font-weight: 600;
+}
+.custome-navbar .navbar-brand > span {
+  opacity: 0.4;
+}
+.custome-navbar .navbar-toggler {
+  border-color: transparent;
+}
+.custome-navbar .navbar-toggler:active, .custome-navbar .navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+@media (min-width: 992px) {
+  .custome-navbar .costume-navbar-nav li {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+}
+.custome-navbar .costume-navbar-nav li a {
+  font-weight: 500;
+  color: white !important;
+  opacity: 0.5;
+  position: relative;
+  transition: 0.3s all ease;
+}
+@media (min-width: 992px) {
+  .custome-navbar .costume-navbar-nav li a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background: #F9BF29;
+    bottom: 0;
+    left: 8px;
+    right: 8px;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.15s all ease-out;
+  }
+}
+.custome-navbar .costume-navbar-nav li a:hover {
+  opacity: 1;
+}
+.custome-navbar .costume-navbar-nav li a:hover:before {
+  width: calc(100% - 16px);
+}
+.custome-navbar .costume-navbar-nav li.active a {
+  opacity: 1;
+}
+.custome-navbar .costume-navbar-nav li.active a:before {
+  width: calc(100% - 16px);
+}
+.custome-navbar .costume-navbar-icon {
+  margin-left: 0 !important;
+  flex-direction: row;
+}
+@media (min-width: 768px) {
+  .custome-navbar .costume-navbar-icon {
+    margin-left: 40px !important;
+  }
+}
+.custome-navbar .costume-navbar-icon li:first-child {
+  margin-right: 20px;
+}
+
+.hero {
+  background: #3B5D50;
+  padding: calc(8rem - 30px) 0 8rem 0;
+}
+.hero .hero-desc {
+  max-width: 450px;
+}
+.hero h1 {
+  color: white;
+  font-weight: 700;
+}
+.hero p {
+  color: rgba(255, 255, 255, 0.5);
+}
+.hero .hero-img-wrap {
+  position: relative;
+}
+.hero .hero-img-wrap img {
+  position: absolute;
+  top: -70x;
+  right: -100;
+  max-width: 780px;
+  z-index: 2;
+}
+.hero .hero-img-wrap:after {
+  content: "";
+  position: absolute;
+  width: 255px;
+  height: 217px;
+  background-image: url("../assets/Dotted.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -100;
+  top: -40;
+}
+
+.btn {
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  background: #2F2F2F;
+  border-color: #2F2F2F;
+}
+.btn:hover {
+  color: white;
+  background: #222222;
+  border-color: #222222;
+}
+.btn:active, .btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+.btn.btn-secondary {
+  color: #2F2F2F;
+  background: #F9BF29;
+  border-color: #F9BF29;
+}
+.btn.btn-secondary:hover {
+  background: #f8b810;
+  border-color: #f8b810;
+}/*# sourceMappingURL=style.css.map */
