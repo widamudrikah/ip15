@@ -19,7 +19,7 @@ function animateBattery() {
             }
             level++;
         } else {
-            level = 0; // Reset the battery level and repeat the animation
+            level = 0; 
         }
     }, 50); // Speed of battery filling
 }
